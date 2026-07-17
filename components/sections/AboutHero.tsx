@@ -10,7 +10,7 @@ export function AboutHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/images/gallery/FB_IMG_1775728609536.jpg')",
+            "url('/images/gallery/biblebrain/image19.jpeg')",
         }}
         aria-hidden="true"
       />
@@ -30,8 +30,9 @@ export function AboutHero() {
             About Bible Brain<span className="text-[#D4AF37]">®</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-white/75 md:text-xl">
-            A long-term youth development platform combining faith, education, and media
-            to guide teenagers through Scripture in a structured and engaging way.
+            A structured, long-term Scripture engagement platform combining faith,
+            education, and media to guide teenagers through Scripture in a structured
+            and engaging way.
           </p>
         </motion.div>
       </div>

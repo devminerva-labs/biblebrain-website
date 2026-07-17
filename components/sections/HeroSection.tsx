@@ -11,7 +11,7 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/images/gallery/FB_IMG_1775728564798.jpg')",
+            "url('/images/gallery/biblebrain/image14.jpeg')",
         }}
         aria-hidden="true"
       />
@@ -55,7 +55,7 @@ export function HeroSection() {
 
           {/* Subtext */}
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-            Bible Brain®️ — a teenagers&apos; interactive Bible platform that combines media, competition, and structured learning to guide{" "}
+            Bible Brain<span className="text-[#D4AF37]">®</span> — a teenagers&apos; interactive Bible platform that combines media, competition, and structured learning to guide{" "}
             <span className="font-semibold text-white">young people through Scripture.</span>
           </p>
 
@@ -68,7 +68,7 @@ export function HeroSection() {
               </svg>
             </Button>
             <Button
-              href="https://www.youtube.com/@biblebrainhq"
+              href="https://www.youtube.com/@biblebrainng"
               variant="secondary"
               size="lg"
             >

@@ -66,9 +66,6 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -79,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
       <head>
-        <link rel="preload" as="image" href="/images/gallery/FB_IMG_1775728564798.jpg" />
+        <link rel="preload" as="image" href="/images/gallery/biblebrain/image14.jpeg" />
       </head>
       <body>
         <Navbar />
