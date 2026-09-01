@@ -19,7 +19,7 @@ const contactInfo = [
     ),
     label: "WhatsApp",
     value: "Chat with us on WhatsApp",
-    href: "https://wa.me/message/JDBSQRTD2JU7P1",
+    href: "https://wa.me/message/OQY43NWPHSZDE1",
   },
   {
     icon: (

@@ -1,4 +1,4 @@
-const PHONE = "2348032556163";
+const WHATSAPP_LINK = "https://wa.me/message/OQY43NWPHSZDE1";
 const MESSAGE = encodeURIComponent(
   "Hello, I found Bible Brain® online and would love to learn more about partnering with you."
 );
@@ -6,7 +6,7 @@ const MESSAGE = encodeURIComponent(
 export function WhatsAppButton() {
   return (
     <a
-      href={`https://wa.me/${PHONE}?text=${MESSAGE}`}
+      href={`${WHATSAPP_LINK}?text=${MESSAGE}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
