@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { NNTVBCFeature } from "@/components/sections/NNTVBCFeature";
 import { WhatIsBibleBrain } from "@/components/sections/WhatIsBibleBrain";
+import { ProductEcosystem } from "@/components/sections/ProductEcosystem";
+import { WhatWeHaveBuilt } from "@/components/sections/WhatWeHaveBuilt";
 import { WhatWeDo } from "@/components/sections/WhatWeDo";
-import { Programmes } from "@/components/sections/Programmes";
-import { ProvenGrowth } from "@/components/sections/ProvenGrowth";
+import { WhoWeServe } from "@/components/sections/WhoWeServe";
+import { NNTVBCFiveYear } from "@/components/sections/NNTVBCFiveYear";
 import { EventsSection } from "@/components/sections/EventsSection";
-import { WhyItMatters } from "@/components/sections/WhyItMatters";
-import { PartnershipCTA } from "@/components/sections/PartnershipCTA";
 import { MediaGrid } from "@/components/sections/MediaGrid";
+import { PartnershipCTA } from "@/components/sections/PartnershipCTA";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
@@ -21,14 +23,16 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <NNTVBCFeature />
       <WhatIsBibleBrain />
+      <ProductEcosystem />
+      <WhatWeHaveBuilt />
       <WhatWeDo />
-      <Programmes />
-      <ProvenGrowth />
+      <WhoWeServe />
+      <NNTVBCFiveYear />
       <EventsSection />
-      <WhyItMatters />
-      <PartnershipCTA />
       <MediaGrid />
+      <PartnershipCTA />
       <ContactSection />
     </>
   );

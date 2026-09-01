@@ -1,4 +1,6 @@
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    Pick<React.AnchorHTMLAttributes<HTMLAnchorElement>, "target" | "rel"> {
   variant?: "primary" | "secondary" | "dark";
   size?: "md" | "lg";
   asChild?: boolean;
@@ -11,6 +13,8 @@ export function Button({
   className = "",
   children,
   href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const base =
@@ -33,7 +37,7 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} target={target} rel={rel} className={classes}>
         {children}
       </a>
     );

@@ -9,9 +9,9 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
       </svg>
     ),
-    title: "Structured Engagement",
+    title: "Structured Bible Learning",
     description:
-      "Teenagers study Scripture through guided, competitive formats that build mastery and long-term retention.",
+      "We create structured systems that make Scripture learning consistent, engaging, and memorable.",
   },
   {
     icon: (
@@ -21,7 +21,7 @@ const pillars = [
     ),
     title: "Competitive Learning",
     description:
-      "Structured competition formats that challenge teenagers to go deeper into Scripture while building confidence and excellence.",
+      "We use competition to encourage Scripture mastery, confidence, discipline, and excellence.",
   },
   {
     icon: (
@@ -29,9 +29,19 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
       </svg>
     ),
-    title: "Media Integration",
+    title: "Media & Digital Engagement",
     description:
-      "Content delivered through live events, digital platforms, and broadcast-ready formats for maximum reach and impact.",
+      "We extend Bible learning through television, digital platforms, and modern media experiences.",
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-8 w-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918" />
+      </svg>
+    ),
+    title: "Family & Community Discipleship",
+    description:
+      "We develop resources that bring structured Scripture engagement into homes, churches, schools, and communities.",
   },
 ];
 
@@ -40,16 +50,16 @@ export function WhatWeDo() {
     <section className="bg-[#F5F5F5] py-16 sm:py-24 lg:py-32">
       <Container>
         <AnimatedSection className="mb-10 text-center sm:mb-16">
-          <SectionLabel className="mb-4 block">Our Approach</SectionLabel>
+          <SectionLabel className="mb-4 block">How We Work</SectionLabel>
           <h2 className="font-display text-3xl font-bold text-[#0A1F44] sm:text-4xl">
-            What We Do
+            Our Approach
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[#0A1F44]/60">
             We don&apos;t just teach Scripture. We create systems that make it stick.
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((pillar, i) => (
             <AnimatedSection key={pillar.title} delay={i * 0.15} direction="up">
               <div className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">

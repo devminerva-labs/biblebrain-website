@@ -9,39 +9,34 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const events = [
   {
+    src: "/images/gallery/FB_IMG_1775727570739.jpg",
+    year: "2019–2022",
+    title: "Local Execution",
+    tag: "Local Bible Brain® activities and model development",
+  },
+  {
     src: "/images/flyers/flyer-5.jpeg",
     year: "2023",
-    title: "Teenagers' Bible Study",
+    title: "Teenagers' Bible Challenge",
     tag: "That I May Know Him",
-    status: "past",
   },
   {
     src: "/images/flyers/flyer-4.jpeg",
     year: "2024",
     title: "Teenagers' Bible Challenge",
     tag: "Study to Know God",
-    status: "past",
   },
   {
     src: "/images/flyers/flyer-3.jpeg",
     year: "2025",
     title: "Global Teenagers' Conference",
     tag: "Choice",
-    status: "past",
   },
   {
-    src: "/images/flyers/flyer-1.jpeg",
+    src: "/images/flyers/nntvbc-2026-flyer.png",
     year: "2026",
-    title: "Teenagers' Bible Challenge S3",
-    tag: "Unlock the Power of Psalms",
-    status: "upcoming",
-  },
-  {
-    src: "/images/flyers/flyer-2.jpeg",
-    year: "2026",
-    title: "Global Teenagers' Bible Challenge",
-    tag: "Win $3,000",
-    status: "upcoming",
+    title: "NNTVBC — National Expansion",
+    tag: "The Life and Lessons of Moses and Peter",
   },
 ];
 
@@ -55,17 +50,17 @@ export function EventsSection() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section id="events" className="bg-[#F5F5F5] py-16 sm:py-24 lg:py-32">
+    <section id="journey" className="bg-[#F5F5F5] py-16 sm:py-24 lg:py-32">
       <Container>
         <AnimatedSection className="mb-10 text-center sm:mb-12">
           <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">
-            Events
+            Our Journey
           </span>
           <h2 className="font-display text-3xl font-bold text-[#0A1F44] sm:text-4xl">
-            Our Journey, Year by Year
+            Local Beginnings to National Expansion
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[#0A1F44]/60">
-            From a local quiz to a global platform — every flyer marks a step forward.
+            From local execution to a national Scripture-learning ecosystem — every step forward.
           </p>
         </AnimatedSection>
 
@@ -88,15 +83,9 @@ export function EventsSection() {
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                       <div className="absolute left-3 top-3">
-                        {event.status === "upcoming" ? (
-                          <span className="rounded-full bg-[#D4AF37] px-3 py-1 text-xs font-bold text-[#0A1F44] shadow">
-                            Upcoming
-                          </span>
-                        ) : (
-                          <span className="rounded-full bg-[#0A1F44]/70 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
-                            {event.year}
-                          </span>
-                        )}
+                        <span className="rounded-full bg-[#0A1F44]/70 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                          {event.year}
+                        </span>
                       </div>
                     </div>
 

@@ -27,7 +27,7 @@ export function AboutHero() {
             Our Story
           </span>
           <h1 className="mb-6 font-display text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-            About Bible Brain<span className="text-[#D4AF37]">®</span>
+            About Bible Brain <span className="text-[#D4AF37]">®</span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-white/75 md:text-xl">
             A long-term youth development platform combining faith, education, and media

@@ -56,6 +56,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/home", destination: "/", permanent: true },
       { source: "/index", destination: "/", permanent: true },
+      { source: "/nntvbc-2026", destination: "/nntvbc", permanent: false },
     ];
   },
 };

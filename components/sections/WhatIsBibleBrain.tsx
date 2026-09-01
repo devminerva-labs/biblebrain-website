@@ -10,27 +10,28 @@ export function WhatIsBibleBrain() {
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
           {/* Text — 60% */}
           <AnimatedSection direction="left" className="lg:w-[58%]">
-            <SectionLabel className="mb-4 block">About the Platform</SectionLabel>
+            <SectionLabel className="mb-4 block">Who We Are</SectionLabel>
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight text-[#0A1F44] sm:text-4xl">
               What is Bible Brain<span className="text-[#D4AF37]">®</span>?
             </h2>
             <p className="mb-6 text-lg leading-relaxed text-[#0A1F44]/70">
-              Bible Brain® is a structured platform that transforms how teenagers engage
-              with Scripture. Through competition, media, and disciplined learning, it
-              turns Bible study into a consistent, engaging, and life-shaping experience.
+              Bible Brain® is the flagship product of Scripture Brain Limited, a
+              faith-based educational and media company committed to developing
+              innovative, engaging, and structured Bible learning experiences that
+              help people of all ages study, understand, and live the Word of God.
             </p>
             <p className="text-base leading-relaxed text-[#0A1F44]/60">
-              It is built not as a programme, but as a scalable platform with long-term
-              impact — designed to engage young people across schools, churches, and
-              digital platforms.
+              Bible Brain® is a comprehensive product ecosystem integrating television,
+              education, family engagement, competitions, devotional resources, and
+              Sunday school curricula into one unified platform.
             </p>
 
             {/* Key stats */}
             <div className="mt-10 flex flex-wrap gap-8">
               {[
-                { value: "4+", label: "Years Running" },
-                { value: "1000+", label: "Teenagers Reached" },
-                { value: "Global", label: "Conference 2025" },
+                { value: "8", label: "Products in the Ecosystem" },
+                { value: "363", label: "TV Episodes" },
+                { value: "110 Years", label: "Content Framework" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-display text-3xl font-bold text-[#D4AF37]">

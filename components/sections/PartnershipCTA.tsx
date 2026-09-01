@@ -12,6 +12,7 @@ const partnerTypes = [
 export function PartnershipCTA() {
   return (
     <section
+      id="partner"
       className="py-16 sm:py-24 lg:py-32"
       style={{
         background: "linear-gradient(135deg, #D4AF37 0%, #b8960c 100%)",
@@ -23,11 +24,13 @@ export function PartnershipCTA() {
             Partnership
           </span>
           <h2 className="mb-4 font-display text-3xl font-extrabold text-[#0A1F44] sm:text-4xl lg:text-5xl">
-            Be Part of Building a Generation
+            Partner With Bible Brain®
           </h2>
           <p className="mx-auto mb-10 max-w-xl text-lg text-[#0A1F44]/70">
-            Partner with a platform designed for long-term impact. Be part of something
-            that outlives seasons.
+            Bible Brain® is building a long-term Scripture-learning ecosystem designed to
+            serve children, teenagers, families, schools, churches, and communities. We
+            welcome strategic partnerships in education, media, technology, sponsorship,
+            broadcasting, publishing, and community development.
           </p>
 
           <Button href="/#contact" variant="dark" size="lg" className="mb-12">
