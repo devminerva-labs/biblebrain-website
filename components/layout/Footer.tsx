@@ -1,12 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Ecosystem", href: "/#ecosystem" },
   { label: "NNTVBC", href: "/nntvbc" },
+  { label: "Programmes", href: "/#programmes" },
   { label: "Media", href: "/#media" },
-  { label: "Partner", href: "/#partner" },
+  { label: "Partner", href: "/partner" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -22,7 +24,7 @@ const socialLinks = [
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/@biblebrainng",
+    href: "https://www.facebook.com/biblebrainng",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -65,15 +67,15 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#D4AF37]">
-                <span className="font-display text-lg font-black text-[#0A1F44]">B</span>
-              </div>
-              <div>
-                <div className="font-display text-lg font-bold">
-                  Bible Brain<span className="text-[#D4AF37]">®</span>
-                </div>
-              </div>
+            <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-white px-3 py-2">
+              <Image
+                src="/banner.png"
+                alt="Bible Brain® — A Scripture Brain Company"
+                width={200}
+                height={67}
+                className="h-auto w-36"
+                sizes="144px"
+              />
             </div>
             <p className="text-sm text-white/60">A Scripture Brain Company</p>
             <p className="mt-4 text-sm font-semibold text-[#D4AF37]">
@@ -111,7 +113,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/message/JDBSQRTD2JU7P1"
+                  href="https://wa.me/2348032556163"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-white/70 transition hover:text-white"
