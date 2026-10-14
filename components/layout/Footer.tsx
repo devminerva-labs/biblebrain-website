@@ -8,6 +8,7 @@ const quickLinks = [
   { label: "NNTVBC", href: "/nntvbc" },
   { label: "Programmes", href: "/#programmes" },
   { label: "Media", href: "/#media" },
+  { label: "YCM Quiz 2026", href: "/ycmquiz2026" },
   { label: "Partner", href: "/partner" },
   { label: "Contact", href: "/#contact" },
 ];

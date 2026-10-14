@@ -1,0 +1,84 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Container } from "@/components/layout/Container";
+import { SectionLabel } from "@/components/ui/SectionLabel";
+
+export const metadata: Metadata = {
+  title: "YCM Quiz 2026 — Bible Brain®",
+  description:
+    "Participate in the YCM Quiz 2026. Register and submit your answers through the official quiz form.",
+  alternates: {
+    canonical: "https://www.biblebrain.ng/ycmquiz2026",
+  },
+};
+
+const FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeZUhL-0YY2D0bk5DzJ82617MgK7r6e6wYcixcgDu04ISy_mQ/viewform?embedded=true";
+
+export default function YcmQuiz2026Page() {
+  return (
+    <>
+      <div className="bg-[#0A1F44]">
+        <Container>
+          <div className="flex flex-col items-center gap-10 py-16 sm:py-24 lg:flex-row lg:items-center lg:gap-16 lg:py-28">
+            <div className="w-full max-w-sm shrink-0 lg:w-[36%]">
+              <div className="overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
+                <Image
+                  src="/images/flyers/ycm-national-bible-challenge-2026-flyer.png"
+                  alt="YCM National Online Bible Challenge 2026 flyer"
+                  width={1024}
+                  height={1536}
+                  className="h-auto w-full object-cover"
+                  sizes="(max-width: 1024px) 90vw, 36vw"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="w-full text-center lg:w-[64%] lg:text-left">
+              <SectionLabel light>Competition</SectionLabel>
+              <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                YCM Quiz 2026
+              </h1>
+              <p className="mt-6 text-lg text-[#D4AF37]">
+                Take part in the YCM Quiz competition. Complete the form below to
+                register and submit your entries.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <div className="bg-[#F5F5F5] py-16 sm:py-24">
+        <Container>
+          <div className="mx-auto max-w-5xl">
+            <div className="overflow-hidden rounded-2xl border border-[#0A1F44]/10 bg-white shadow-sm">
+              <div className="aspect-[4/3] w-full bg-[#0A1F44] sm:aspect-[5/3] md:aspect-[16/7] lg:aspect-[16/6]">
+                <iframe
+                  title="YCM Quiz 2026 Form"
+                  src={FORM_URL}
+                  className="h-full w-full border-0"
+                  frameBorder={0}
+                  scrolling="no"
+                />
+              </div>
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-sm text-[#0A1F44]/60">
+                Alternatively,{" "}
+                <a
+                  href="https://forms.gle/ESKvGEhBv1YyXThu5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-[#D4AF37] hover:text-[#b8960c]"
+                >
+                  open the form in a new window
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
+}
