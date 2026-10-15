@@ -95,7 +95,7 @@ export function ProductEcosystem() {
                     src={product.src}
                     alt={product.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
@@ -145,7 +145,7 @@ export function ProductEcosystem() {
                 src={openProduct.src}
                 alt={openProduct.name}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 640px) 100vw, 448px"
               />
             </div>

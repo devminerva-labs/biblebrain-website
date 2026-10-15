@@ -43,6 +43,19 @@ export default function YcmQuiz2026Page() {
                 Take part in the YCM Quiz competition. Complete the form below to
                 register and submit your entries.
               </p>
+              <div className="mt-8 flex justify-center lg:justify-start">
+                <a
+                  href="https://forms.gle/ESKvGEhBv1YyXThu5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#D4AF37] px-6 py-3 text-base font-bold text-[#0A1F44] transition hover:bg-[#b8960c]"
+                >
+                  Register Now
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-4 w-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </Container>
