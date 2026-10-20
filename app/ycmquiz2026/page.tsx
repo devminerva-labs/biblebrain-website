@@ -78,20 +78,6 @@ export default function YcmQuiz2026Page() {
                 />
               </div>
             </div>
-            <div className="mt-8 text-center">
-              <p className="text-sm text-[#0A1F44]/60">
-                Alternatively,{" "}
-                <a
-                  href="https://forms.gle/ESKvGEhBv1YyXThu5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-[#D4AF37] hover:text-[#b8960c]"
-                >
-                  open the form in a new window
-                </a>
-                .
-              </p>
-            </div>
           </div>
         </Container>
       </div>
