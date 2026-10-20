@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "YCM Quiz 2026 — Bible Brain®",
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
 
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeZUhL-0YY2D0bk5DzJ82617MgK7r6e6wYcixcgDu04ISy_mQ/viewform?embedded=true";
+const STUDY_GUIDE_URL = "/documents/ycm-quiz-2026-study-guide.pdf";
 
 export default function YcmQuiz2026Page() {
   return (
@@ -89,6 +92,34 @@ export default function YcmQuiz2026Page() {
                 .
               </p>
             </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* Official Study Guide — download */}
+      <div className="bg-white py-16 sm:py-24">
+        <Container>
+          <div className="mx-auto max-w-2xl text-center">
+            <AnimatedSection>
+              <SectionLabel className="mb-4 block">Preparation</SectionLabel>
+              <h2 className="font-display text-3xl font-bold text-[#0A1F44] sm:text-4xl">
+                Official Study Guide
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-[#0A1F44]/60">
+                &ldquo;Jesus Once Said…&rdquo; — the official YCM National Online
+                Bible Challenge 2026 study guide, covering the words, teachings,
+                parables, and promises of Jesus Christ as recorded in Matthew,
+                Mark, Luke, and John.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2} className="mt-8 flex justify-center">
+              <Button href={STUDY_GUIDE_URL} variant="primary" size="lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download Study Guide (PDF)
+              </Button>
+            </AnimatedSection>
           </div>
         </Container>
       </div>

@@ -97,17 +97,19 @@ export function Navbar() {
                     </svg>
                   </button>
                   {desktopDropdownOpen && (
-                    <div className="absolute left-0 top-full mt-2 w-52 rounded-lg border border-white/10 bg-[#0A1F44] py-2 shadow-xl">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          onClick={() => setDesktopDropdownOpen(false)}
-                          className="block px-4 py-2.5 text-sm text-white/80 transition hover:bg-white/5 hover:text-[#D4AF37]"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                    <div className="absolute left-0 top-full w-52 pt-2">
+                      <div className="rounded-lg border border-white/10 bg-[#0A1F44] py-2 shadow-xl">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setDesktopDropdownOpen(false)}
+                            className="block px-4 py-2.5 text-sm text-white/80 transition hover:bg-white/5 hover:text-[#D4AF37]"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
